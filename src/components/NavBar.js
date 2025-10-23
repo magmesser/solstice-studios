@@ -7,7 +7,7 @@ import "./NavBar.css";
 // Icons Import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faTypo3 } from "@fortawesome/free-brands-svg-icons";
+import iconOnlyLogo from "../solstice_iconOnly.png";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -34,7 +34,8 @@ function NavBar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Solstice Studios
-            <FontAwesomeIcon className="fa-typo3" icon={faTypo3} />
+
+            <img src={iconOnlyLogo} className="solstice-logo" alt="Solstice Studios logo - anvil and sun"></img>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon
